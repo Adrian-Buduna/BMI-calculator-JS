@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>BMI Calculator</h1>
+        <button id="btnSystem" class="btn-change-system"></button>
+      </div>
+      <div class="main">
+        <div class="form-wrapper">
+          <form>
+            <div class="box-inputs">
+              <div class="input-wrapper">
+                <div class="box-input">
+                  <label for="weight"> Weight</label>
+                  <input type="number" id="weightInput" placeholder="0" />
+                  <span id="weightSpan"></span>
+                </div>
+                <div class="img weight"></div>
+              </div>
+              <div class="input-wrapper">
+                <div class="box-input">
+                  <label for="height">Height</label>
+                  <input type="number" id="heightInput" placeholder="0" />
+                  <span id="heightSpan"></span>
+                </div>
+                <div class="img height"></div>
+              </div>
+            </div>
+            <button id="submit" class="button">Submit</button>
+          </form>
+        </div>
+        <div id="resultMessage" class="result-message"></div>
+        <div id="examples" class="display-wraper">
+          <div class="subtitle">
+            <h2>(BMI) Body Mass Index ranges:</h2>
+          </div>
+          <div class="examples">
+            <div class="gray pad"><p>Below 18.5 Underweight</p></div>
+            <div class="green pad">
+              <p>18.5 to 24.9 Healthy weight</p>
+            </div>
+            <div class="yellow pad"><p>25.0 to 29.9 Overweight</p></div>
+            <div class="orange pad"><p>30 or higher Obesity</p></div>
+            <div class="red pad"><p>40 or higher class 2 Obesity</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
